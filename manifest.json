@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Hider",
+  "version": "1.0",
+  "description": "Hides YouTube Shorts from the YouTube website.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "YouTube Shorts Hider"
+  }
+} 
